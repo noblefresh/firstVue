@@ -2,7 +2,7 @@
 import TheWelcome from '../components/TheWelcome.vue'
 import PageHeader from '../components/PageHeader.vue'
 import Products from '../components/Products.vue'
-import FooterCom from '../components/FooterComponent.vue'
+import FooterComponent from '../components/FooterComponent.vue'
 </script>
 
 <template>
@@ -14,20 +14,22 @@ import FooterCom from '../components/FooterComponent.vue'
                   <div class="md:col-span-2 order-2 flex flex-col justify-center space-y-12">
                       <div class="space-y-5">
                           <div class="font-extrabold w-full text-6xl">
-                              Good Foods are good investments.
+                              Nothing But Qualities
                           </div>
                           <div class="text-lg leading-7 max-w-md">
-                              get fresh foodin an easy way,chopshop is after the well being of your stomach
+                              We sell quality Hoddies, Joggers, Shorts and lot more
                           </div>
                       </div>
                       <div>
+                        <router-link :to="{ name: 'products'}">
                           <span class='w-fit  cursor-pointer transistion-all duration-300 hover:text-purple-400 text-white px-3  py-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded flex justify-center items-center'>
                                 Explore More
                           </span>
+                        </router-link>
                       </div>
                   </div>
                   <div class="md:col-span-3 flex justify-center md:order-2">
-                      <img src="/src/images/banner.png" class="bottom-1 relative h-11/12" style="">
+                      <img src="/src/images/hoddie.png" class="bottom-1 relative h-11/12" style="">
                   </div>
               </div>
           </div>

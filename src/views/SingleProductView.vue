@@ -1,5 +1,5 @@
 <script setup>
-import FooterCom from '../components/FooterComponent.vue'
+import FooterComponent from '../components/FooterComponent.vue'
 </script>
 
 <template>
@@ -105,7 +105,7 @@ import FooterCom from '../components/FooterComponent.vue'
             </div>
         </div>
 
-        <footer-com/>
+        <footer-component/>
     </main>
 </template>
 
@@ -127,7 +127,7 @@ export default {
     },
     mounted(){
         this.productId = this.$route.params.id
-        axios.get(`http://localhost:9000/store/products/${this.productId}`)
+        axios.get(`${import.meta.env.VITE_baseUrl}/store/products/${this.productId}`)
         .then((productData) => {
                 this.product = productData.data.product;
                 console.log(this.product);
